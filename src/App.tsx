@@ -35,7 +35,7 @@ function App() {
       <p>FriendShipCalculator</p>
       <input type="number" className="first" placeholder="Entrer votre age" value={value1} onChange={handleChange}/>
       <input type="number" className="second" placeholder="Entrer votre age" value={value2} onChange={handleChange2} />
-      <button type="submit">validate</button>
+      <button type="submit">validateee</button>
     </div>
   );
 }
