@@ -2,7 +2,27 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAhGGOD2ZULd4NoeA8W24Ww7ZiGg0dpRu0",
+  authDomain: "mon-project-c058b.firebaseapp.com",
+  projectId: "mon-project-c058b",
+  storageBucket: "mon-project-c058b.appspot.com",
+  messagingSenderId: "670512224498",
+  appId: "1:670512224498:web:a4c19d6df4b4cbc43d586b",
+  measurementId: "G-H1V6G0T0VJ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 function App() {
   const [value1, setValue1] = useState(0);
   const [value2, setValue2] = useState(0);
